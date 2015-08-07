@@ -1,0 +1,255 @@
+/*#overview
+{
+	margin: auto;
+}*/
+
+/* Overview */
+
+	@font-face {
+		font-family: "akaDora";
+		src: url("fonts/akadora/akaDora.ttf") format("truetype");
+	}
+	
+	body
+	{
+		font-size: 25px;
+	}
+	
+	a
+	{
+		color: black;
+	}
+	
+	#overview div.day
+	{
+		height: 33.33333333%;
+		/*text-align: center;*/
+		
+		overflow: hidden;
+	}
+	
+	#day1
+	{
+		/*background-color: #ff0000;*/
+		background-color: #ff7777;
+	}
+	
+	#day2
+	{
+		/*background-color: #00ff00;*/
+		background-color: #77ff77;
+	}
+	
+	#day3
+	{
+		/*background-color: #0000ff;*/
+		background-color: #7777ff;
+	}
+	
+	#overview div.day div.title
+	{
+		/*display: inline-block;*/
+		/*display: none;*/
+		
+		/*height: 100%;*/
+		width: 29%;
+		
+		font-family: "akaDora";
+		font-size: 3.3vh;
+		
+		margin: 0;
+		
+		float: right;
+	}
+	
+	.dayTitle
+	{
+		text-align: center;
+	}
+	
+	#overview div.container
+	{
+		width: 100%;
+		height: 100%;
+		
+		margin: auto;
+	}
+	
+	#overview div.container div.daySlideShow
+	{
+		/*display: none;*/
+		
+		height: 100.0%;
+		/*float: right;*/
+		/*position: absolute;*/
+		/*right: 0px;*/
+	}
+	
+	#overview #day2 div.container div.daySlideShow
+	{
+		/*display: none;*/
+		
+		height: 100.1%;
+	}
+	
+	.daySlideShow
+	{
+		width: 70%;
+	}
+	
+	.daySlideShow .slideshow-images
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+/* Day Main Slides */
+
+	.dayMainContainer
+	{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.dayMainContainer table
+	{
+		position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+		
+		width: 100%;
+		height: 100%;
+		
+		text-align: center;
+		
+		z-index: 10000;
+	}
+	
+	.dayMainTitle
+	{
+		display: inline-block;
+		
+		padding: 25px;
+		
+		font-size: 10vw;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		
+		border-radius: 20px;
+		
+		background-color: rgba(240, 240, 240, 0.7);
+	}
+	
+	.dayMainSlideShow
+	{
+		/*position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;*/
+		
+		width: 100%;
+		height: 100%;
+	}
+	
+	.dayMainSlideShow .slideshow-images
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+/* Food Slides */
+
+	table.foodContainer
+	{
+		width: 100%;
+		height: 100%;
+		
+		border-collapse: collapse;
+	}
+	
+	table.foodContainer th, table.foodContainer td
+	{
+		border: 1px solid black;
+	}
+	
+	.foodName
+	{
+		height: 10%;
+		font-size: 5vw;
+	}
+	
+	/*.foodName
+	{
+		position: absolute;
+		top: 0px;
+		left: 40%;
+		
+		font-size: 40px;
+		font-weight: 800;
+		
+		z-index: 5;
+	}*/
+	
+	.ingredientsContainer
+	{
+		text-align: center;
+		
+		background-color: #ffff00;
+	}
+	
+	.ingredients
+	{
+		display: inline-block;
+		
+		padding: 10px;
+		
+		border: 3px solid black;
+		border-radius: 20px;
+		box-shadow: 10px 10px 10px 5px #000000;
+	}
+	
+	.ingredients table
+	{
+		border-collapse: collapse;
+	}
+	
+	.ingredients td
+	{
+		text-align: center;
+	}
+	
+	/*.ingredients tr>td:first-of-type
+	{
+		border-right: solid black 2px;
+	}*/
+	
+	.instructionsContainer
+	{
+		text-align: center;
+		
+		background-color: #00ffff;
+	}
+	
+	.instructions
+	{
+		/*width: 50%;
+		height: 100%;
+		
+		float: right;*/
+		
+		font-size: 25px;
+		
+		/*position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 50%;*/
+	}
+	
