@@ -1,0 +1,167 @@
+body {
+	font-family: "Consolas";
+	background-color: #6ae786;
+}
+
+.container {
+	padding: 10px 10%;
+	/*border: solid black 3px;*/
+	
+	text-align: center;
+}
+
+.about {
+	position: fixed;
+		right: 0px;
+		bottom: 0px;
+	
+	padding: 5px;
+	
+	background-color: #ea7676;
+	border-top-left-radius: 10px;
+}
+
+#help {
+	position: fixed;
+		top: 30px;
+		left: 30px;
+	
+	width: 50px;
+	height: 50px;
+	
+	overflow: hidden;
+	
+	padding: 15px;
+	
+	font-size: 23px;
+	
+	background-color: #ea7676;
+	
+	border-radius: 10px;
+	
+	box-shadow: #000000 4px 4px 10px;
+}
+
+#help:hover {
+	width: 375px;
+	height: 395px;
+}
+
+#helpLogo {
+	margin: 0px 0px 5px 0px;
+	font-size: 50px;
+}
+
+#help table {
+	margin: auto;
+}
+
+#exampleButton {
+	width: 70%;
+	height: 50px;
+	
+	margin: 20px;
+	
+	font-family: "Consolas";
+	font-size: 30px;
+}
+
+#inputField {
+	width: 100%;
+	height: 50px;
+	
+	font-family: "Consolas";
+	font-size: 25px;
+	letter-spacing: -1px;
+	
+	text-align: center;
+	
+	background-color: #000000;
+	color: #00ff00;
+}
+
+/*#progressBar {
+	width: 80%;
+	height: 25px;
+	
+	margin: 10px;
+	
+	background-color: #000000;
+}*/
+
+#processButton {
+	width: 300px;
+	height: 100px;
+	
+	margin: 30px;
+	
+	font-size: 40px;
+	font-family: "Consolas";
+	
+	background-color: #000000;
+	color: #00ff00;
+	
+	border-style: dashed;
+	border-width: 3px;
+	border-color: #00ff00;
+}
+
+#output {
+	padding: 10px;
+	
+	font-size: 20px;
+	
+	background-color: #7976ea;
+	color: #ffffff;
+	
+	border-radius: 20px;
+}
+
+#outputTable {
+	margin: auto;
+	
+	border-collapse: collapse;
+}
+
+#outputBody tr:nth-child(2n) {
+	background-color: #aaaaaa;
+}
+
+#outputBody tr:nth-child(2n + 1) {
+	background-color: #888888;
+}
+
+#outputBody tr {
+	transition: background-color 0.25s;
+	/*transition: font-size 0.5s;*/
+	/*transition: line-height 0.5s;*/
+}
+
+#outputBody tr:hover {
+	background-color: #555555;
+	/*font-size: 25px;*/
+	/*line-height: 30px;*/
+}
+
+#outputBody td {
+	padding: 3px 10px;
+}
+
+#conclusion {
+	padding: 10px;
+	margin: 20px;
+	
+	font-size: 30px;
+	
+	background-color: #ffffff;
+	color: #000000;
+	
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000000;
+	
+	border-radius: 20px;
+}
+
+#conclusion.alltrue {background-color: #00ff00;}
+#conclusion.allfalse {background-color: #ff0000;}
