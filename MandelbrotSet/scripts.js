@@ -56,7 +56,7 @@ var drag;
 
 var canvas, context;
 
-var workerCount = 1;
+var workerCount = "4x4";
 var maxIterations = 30;
 var maxLength = 4;
 var scale = 2;
@@ -185,7 +185,7 @@ function shareHide() {
 }
 
 function configUpdate() {
-  workerCount = parseInt(document.getElementById("workerCountInput").value);
+  workerCount = document.getElementById("workerCountInput").value;
   maxIterations = parseInt(document.getElementById("maxIterationsInput").value);
   maxLength = parseInt(document.getElementById("maxLengthInput").value);
   scale = parseInt(document.getElementById("scaleInput").value);
@@ -308,7 +308,8 @@ function process() {
   generalData.startColor = startColor;
   generalData.endColor = endColor;
   
-  var partitionCount = {x: 4, y: 4};
+  var splittedWorkerCount = workerCount.split("x");
+  var partitionCount = {x: parseInt(splittedWorkerCount[0]), y: parseInt(splittedWorkerCount[1])};
   for (var y = 0; y < partitionCount.y; y++) {
     for (var x = 0; x < partitionCount.x; x++) {
       var currentWorker = new Worker("worker.js");
