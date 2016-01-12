@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mandelbrot</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="complex.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+  <div id="shareCodeContainer">
+    Paste this link into a browser to share it or bookmark it for future use:
+    <br>
+    <textarea id="shareCode">
+      
+    </textarea>
+  </div>
+  <div class="container">
+    
+    <!-- GitHug Fork Banner -->
+      <a href="https://github.com/Isti115/MandelbrotSet"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    
+    <div id="author" class="about noselect">
+      Written by: Istvan Donko
+    </div>
+    
+    <div id="config">
+      <img id="configLogo" src="gear.png" />
+      <img id="configShare" src="share.png" />
+      
+      <table id="configTable">
+        <thead>
+          <tr><th>Parameter</th><th>Value</th></tr>
+        </thead>
+        <tr>
+          <td>Worker count:</td>
+          <td><input class="configInput" id="workerCountInput" type="text" value="1"></td>
+        </tr>
+        <tr>
+          <td>Max iterations:</td>
+          <td><input class="configInput" id="maxIterationsInput" type="text" value="50"></td>
+        </tr>
+        <tr>
+          <td>Maximum length:</td>
+          <td><input class="configInput" id="maxLengthInput" type="text" value="4"></td>
+        </tr>
+        <tr>
+          <td id="scaleCounter">Scale (2):</td>
+          <td><input class="configInput" id="scaleInput" type="range" min="1" max="10" value="2"></td>
+        </tr>
+        <tr>
+          <td>Area:</td>
+          <td><input class="configInput" id="areaInput" type="text" value="4"></td>
+        </tr>
+        <tr>
+          <table id="colorTable">
+            <tr>
+              <td>Base Color</td><td>Begin Color</td><td>End Color</td>
+            </tr>
+            <tr>
+              <td><input class="configInput" id="baseColorInput" type="color" value="#000000"></td>
+              <td><input class="configInput" id="startColorInput" type="color" value="#0000ff"></td>
+              <td><input class="configInput" id="endColorInput" type="color" value="#000055"></td>
+            </tr>
+          </table>
+        </tr>
+      </table>
+      
+      <input id="exampleButton" type="button" value="Random place" />
+      <br>
+      <input id="processButton" type="button" value="Process" />
+    </div>
+    
+    <h1 class="noselect" id="title">Discrete Mathematics - Mandelbrot Set</h1>
+    
+    <div id="output">
+      <canvas id="outputCanvas"></canvas>
+    </div>
+  </div>
+</body>
+</html>
